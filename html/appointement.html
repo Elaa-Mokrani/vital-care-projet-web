@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="elaa mokrani">
+    <link rel="stylesheet" href="exp.css">
+    <link rel="stylesheet" href="exp.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/facebook-f?style=brands">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/twitter?style=brands">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/instagram?style=brands">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<title>appointement(patient appointement)</title>
+</head>
+  <body bgcolor="grey">
+      
+  	<div class="card">
+        <a href="C:\Users\user\Desktop\vital care projet web\html\index.html">  <img style="/* cancel */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 1300px;
+z-index: 1;
+top: 25px;
+" src="C:\Users\user\Desktop\vital care projet web\images\svg\croit.svg"></a>
+  		<section style="/* Rectangle 58 */
+
+position: absolute;
+width: 1401px;
+height: 113px;
+left: 0px;
+top: 0px;
+background: #245C6E;
+border-radius: 38px 39px 0px 0px;
+"> <p style="font-size: 37px;
+font-family: poppins;
+font-weight: 1000;
+padding: 20px;
+color: whitesmoke;">Med Care</p> </section>
+    <h1> Appointment</h1>
+    <div style="/* doctor 3*/
+
+position: absolute;
+width: 417.12px;
+height: 494.64px;
+left: 113px;
+top: 230.81px;
+
+background: #FFFFFF;
+box-shadow: 0px 3.52453px 21.1472px -0.881132px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(17.6226px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 13.0291px;
+"><div style="/* Rectangle vert d'eau */
+margin-left: 55px;
+margin-top: 47px;
+width: 302.28px;
+height: 198.91px;
+left: 334px;
+top: 575px;
+
+background: #D2EBE7;
+border-radius: 20.8466px;
+"> 
+
+<img style="position: absolute;
+width: 336px;
+height: 223px;
+left: 83px;
+top:23px;" src="C:\Users\user\Desktop\vital care projet web\images\svg\doctor3.svg">
+<h3>Dr. Flena Fouleneya </h3>
+<h5>Gynologist</h5>
+<!--les etoiles -->
+ <div class="stars">
+      <span class="star" id="star1">&#9733;</span>
+      <span class="star" id="star2">&#9733;</span>
+      <span class="star" id="star3">&#9733;</span>
+      <span class="star" id="star4">&#9733;</span>
+      <span class="star" id="star5">&#9734;</span>
+      <span class="clients">(96)</span>
+    </div>
+</div>
+ </div>
+    <form>
+      <label style="/* Patient’s First Name */
+
+position: absolute;
+width: 200px;
+height: 30px;
+left: 674px;
+top: 270px;
+" class="headings"  for="patient-name">Patient first Name:</label>
+      <input class="inp" style="position: absolute;
+left: 966px;
+top: 302px;" type="text" id="patient-name" name="patient-name" required><br><br>
+      
+ <label style="/* Patient’s Last Name */
+
+position: absolute;
+width: 199px;
+height: 30px;
+left: 993px;
+top: 270px;
+"class="headings"  for="patient-name">Patient Last Name:</label>
+      <input class="inp" style="/* Rectangle 50 */
+position: absolute;
+left: 666px;
+top: 302px;
+" type="text" id="patient-name" name="patient-name" required><br><br>
+       
+      <label style="position: absolute;
+left: 670px;
+top: 412px;" class="headings" for="patient-gender">Patient Gender:</label>
+      <select style="/* Rectangle 52 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 268px;
+height: 57px;
+left: 668px;
+top: 442px;
+
+background: #F8F7F7;
+border: 1px solid #DCD7D7;
+border-radius: 14px;
+" id="patient-gender" name="patient-gender" required>
+        <option class="headings" value="">--Please select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br><br>
+      <label style="position: absolute;
+left: 970px;
+top: 412px;" class="headings" for="patient-age">Patient Age:</label>
+      <input class="inp" style="position: absolute;
+left: 970px;
+top: 442px;" type="number" id="patient-age" name="patient-age" min="1" max="120" required><br><br>
+      
+
+      <label  class="headings" style="position: absolute;
+left: 970px;
+top: 532px;" for="patient-phone">Patient Phone:</label>
+      <input class="inp" style="position: absolute;
+left: 970px;
+top: 572px;" type="tel" id="patient-phone" name="patient-phone" pattern="[0-9]{2}[0-9]{3}[0-9]{3}" required><br><br>
+      
+      <label class="headings" style="position: absolute;
+left: 670px;
+top: 532px;" for="patient-email">Patient Email:</label>
+      <input class="inp" style="position: absolute;
+left: 670px;
+top: 572px;" type="email" id="patient-email" name="patient-email" required><br><br>
+
+       <label style="position: absolute;
+left: 670px;
+top: 652px;" class="headings" for="appointment-date">Appointment Date:</label>
+      <input class="inp" style="position: absolute;
+left: 670px;
+top: 682px;" type="date" id="appointment-date" name="appointment-date" required><br><br>
+      
+      <label style="position: absolute;
+left: 970px;
+top: 652px;"class="headings" for="appointment-time">Appointment Time:</label>
+      <input class="inp" style="position: absolute;
+left: 970px;
+top: 682px;" type="time" id="appointment-time" name="appointment-time" required><br><br>
+      <li>
+        <input type="checkbox" id="payment" name="payment" value="payment" required>
+        <label for="task1">payment through wallet</label><br>
+        <a href="">other methods ?</a>
+      </li>
+     <a href="C:\Users\user\Desktop\vital care projet web\html\appointement confirmation.html"> <button type="submit" value="Book Appointment">Confirm</button></a>
+    </form>
+          
+    </div>
+  </body>
+
+  <style type="text/css">
+  	.card{
+  		/* Rectangle 46 */
+
+position: absolute;
+width: 1360px;
+height: 876px;
+left: 55px;
+top: 176px;
+padding: 20px;
+background: #FFFFFF;
+box-shadow: 0px 3.99524px 3.99524px rgba(0, 0, 0, 0.25);
+border-radius: 37.9548px;
+
+  	}
+
+h1{
+	/* Appointment */
+
+position: absolute;
+width: 258px;
+height: 58px;
+left: 665px;
+top: 123px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 38.6667px;
+line-height: 58px;
+/* identical to box height */
+
+color: #404040;
+
+}
+h3 {
+	/* Dr. flena */
+
+position: absolute;
+width: 219px;
+height: 39px;
+left: 109.48px;
+top: 246.622px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 25.7333px;
+line-height: 39px;
+/* identical to box height */
+text-align: center;
+
+color: #404040;
+
+}
+h5{
+	/* Neurologist */
+
+position: absolute;
+width: 111px;
+height: 29px;
+left: 163.1px;
+top: 316.62px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 19.2034px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+
+color: #767676;
+
+
+}
+.stars {
+        display: inline-block;
+        font-size: 24px;
+        color: #dcdcdc;
+        text-shadow: 1px 1px #54A798;
+        position: absolute;
+        top: 380px;
+        left: 140px;
+      }
+
+      .stars.active {
+        color: #54A798;
+        text-shadow: 1px 1px #dcdcdc;
+      }
+
+      .stars span:hover,
+      .stars span:hover ~ span {
+        color: #54A798;
+        text-shadow: 1px 1px #dcdcdc;
+      }
+
+      .clients {
+        font-size: 16px;
+        color: black;
+        margin-left: 5px;
+        font-family: poppins;
+      }
+
+.headings{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #404040;
+
+
+}
+.inp {
+	background: #F8F7F7;
+border: 1px solid #DCD7D7;
+border-radius: 14px;
+box-sizing: border-box;
+width: 265px;
+height: 57px;
+
+}
+
+button {
+/* Rectangle 55 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 298px;
+height: 63px;
+left: 525px;
+top: 830px;
+
+background: #245C6E;
+border: 1px solid #245C6E;
+border-radius: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+cursor: pointer;
+color: #FFFFFF;
+}
+
+      li {
+      	list-style: none;  font-family: 'Poppins', sans-serif;
+        color: #54A798;
+        margin-bottom: 10px;
+        position: absolute;
+        left: 1000px;
+        top: 785px;
+      }
+
+      li input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      li label {
+        margin-left: 25px;
+        font-size: 18px;
+      }
+
+      li input[type="checkbox"]:checked + label {
+        text-decoration:underline;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+  </style>
+
+</html>

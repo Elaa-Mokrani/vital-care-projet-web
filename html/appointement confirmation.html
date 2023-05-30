@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="elaa mokrani">
+    <link rel="stylesheet" href="exp.css">
+    <link rel="stylesheet" href="exp.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/facebook-f?style=brands">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/twitter?style=brands">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/instagram?style=brands">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+	<title>Appointement Confirmation</title>
+</head>
+	<body bgcolor="grey">
+      
+  	<div class="card">
+      
+  		<section style="/* Rectangle 58 */
+
+position: absolute;
+width: 1301px;
+height: 113px;
+left: 0px;
+top: 0px;
+background: #245C6E;
+border-radius: 38px 39px 0px 0px;
+"> <p style="font-size: 37px;
+font-family: poppins;
+font-weight: 1000;
+padding: 20px;
+color: whitesmoke;">Med Care</p> </section>
+    
+    <div style="/* doctor 3*/
+
+position: absolute;
+width: 1080.12px;
+height: 494.64px;
+left: 113px;
+top: 170.81px;
+
+background: #FFFFFF;
+box-shadow: 0px 3.52453px 21.1472px -0.881132px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(17.6226px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 13.0291px;
+">  <a href="C:\Users\user\Desktop\vital care projet web\html\index.html">  <img style="/* cancel */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 1000px;
+z-index: 1;
+top: 25px;
+" src="C:\Users\user\Desktop\vital care projet web\images\svg\croit.svg"></a><h1> Appointment Confirmation</h1><h2>feln fallouni</h2><h4 class="date"> 29 August 2023</h4><h4 class="time">4:30 pm</h4><p>A notification has been sent to Ph.+216 22 182 365 and flenfallouni4@gmail.com</p> <div style="/* Rectangle vert d'eau */
+margin-left: 55px;
+margin-top: 47px;
+width: 302.28px;
+height: 198.91px;
+left: 334px;
+top: 575px;
+
+background: #D2EBE7;
+border-radius: 20.8466px;
+"> 
+
+<img style="position: absolute;
+width: 336px;
+height: 223px;
+left: 83px;
+top:23px;" src="C:\Users\user\Desktop\vital care projet web\images\svg\doctor3.svg">
+<h3>Dr. Flena Fouleneya </h3>
+<h5>Gynologist</h5>
+<!--les etoiles -->
+ <div class="stars">
+      <span class="star" id="star1">&#9733;</span>
+      <span class="star" id="star2">&#9733;</span>
+      <span class="star" id="star3">&#9733;</span>
+      <span class="star" id="star4">&#9733;</span>
+      <span class="star" id="star5">&#9734;</span>
+      <span class="clients">(96)</span>
+    </div>
+    <script>
+      // Get the number of clients rate
+      const numOfClients = 96;
+      
+      // Calculate the average rating
+      const rating = 4.5;
+      
+      // Calculate the number of filled stars
+      const filledStars = Math.round(rating);
+
+      // Set the active class to the appropriate stars
+      for (let i = 1; i <= filledStars; i++) {
+        document.getElementById(`star${i}`).classList.add('active');
+      }
+
+      // Set the color of the stars based on the number of clients rate
+      const stars = document.querySelectorAll('.star');
+      const color = '#54A798';
+      const threshold = 50;
+      
+      if (numOfClients >= threshold) {
+        stars.forEach(star => star.style.color = color);
+      }
+
+      // Update the number of clients
+      const clients = document.querySelector('.clients');
+      clients.textContent = `(${numOfClients})`;
+    </script>
+</div>
+ </div>
+    
+          
+    </div>
+  </body>
+
+  <style type="text/css">
+  	.card{
+  		/* Rectangle 46 */
+
+position: absolute;
+width: 1260px;
+height: 676px;
+left: 55px;
+top: 176px;
+padding: 20px;
+background: #FFFFFF;
+box-shadow: 0px 3.99524px 3.99524px rgba(0, 0, 0, 0.25);
+border-radius: 37.9548px;
+
+  	}
+
+h1{
+	/* Appointment */
+
+position: absolute;
+
+width: 1000px;
+left: 430px;
+top: 93px;
+color: #54A798;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 1000;
+font-size: 38.6667px;
+line-height: 58px;
+/* identical to box height */
+
+
+}
+h2{
+	/* feln fallouni */
+
+position: absolute;
+width: 268px;
+
+left: 413px;
+top: 212px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 27.6977px;
+line-height: 42px;
+/* identical to box height */
+
+color: #24306E;
+
+
+}
+h3 {
+	/* Dr. flena */
+
+position: absolute;
+width: 219px;
+height: 39px;
+left: 109.48px;
+top: 246.622px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 25.7333px;
+line-height: 39px;
+/* identical to box height */
+text-align: center;
+
+color: #404040;
+
+}
+h5{
+	/* Neurologist */
+
+position: absolute;
+width: 111px;
+height: 29px;
+left: 163.1px;
+top: 316.62px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 19.2034px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+
+color: #767676;
+
+
+}
+.stars {
+        display: inline-block;
+        font-size: 24px;
+        color: #dcdcdc;
+        text-shadow: 1px 1px #54A798;
+        position: absolute;
+        top: 380px;
+        left: 140px;
+      }
+
+      .stars.active {
+        color: #54A798;
+        text-shadow: 1px 1px #dcdcdc;
+      }
+
+      .stars span:hover,
+      .stars span:hover ~ span {
+        color: #54A798;
+        text-shadow: 1px 1px #dcdcdc;
+      }
+
+      .clients {
+        font-size: 16px;
+        color: black;
+        margin-left: 5px;
+        font-family: poppins;
+      }
+
+.date{
+	/* 29 August 2023 */
+
+position: absolute;
+width: 187px;
+height: 36px;
+left: 413px;
+top: 282.6px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24.0655px;
+line-height: 36px;
+/* identical to box height */
+
+color: #24306E;
+}
+.time {
+	/* 4:30 pm */
+
+position: absolute;
+width: 101px;
+height: 36px;
+left: 628px;
+top: 282px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24.0655px;
+line-height: 36px;
+/* identical to box height */
+
+color: #24306E;
+
+
+}
+
+p{
+	/* A notification has been sent to Ph.numb and flenfallouni4@gmail.com */
+
+position: absolute;
+width: 665px;
+height: 26px;
+left: 406px;
+top: 370px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 17.1648px;
+line-height: 26px;
+/* identical to box height */
+
+color: #404040;
+
+
+}
+
+  </style>
+
+
+</html>

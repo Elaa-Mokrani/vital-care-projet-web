@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="elaa mokrani">
+    <link rel="stylesheet" href="exp.css">
+    <link rel="stylesheet" href="exp.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/facebook-f?style=brands">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/twitter?style=brands">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/instagram?style=brands">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<title>doctor sing up</title>
+</head>
+  <body bgcolor="grey">
+  
+  	<div class="card">
+        <a href="C:\Users\user\Desktop\vital care projet web\html\index.html">  <img style="/* cancel */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 1200px;
+z-index: 1;
+top: 47px;
+" src="C:\Users\user\Desktop\vital care projet web\images\svg\croit.svg"></a>
+    <h1> Sing up for  doctor Account</h1>
+    <div style=" /* Rectangle 47 */
+
+position: absolute;
+width: 560px;
+height: 915px;
+left: 1px;
+top: 0px;
+
+background: #D2EBE7;
+border-radius: 37px 0px 0px 37px;
+
+"><img style="opacity: 0.2; width :560px;height: 915px; " src="C:\Users\user\Desktop\vital care projet web\images\png\Patient_Care-Technician.jpg"> <h5 style="/* vital Care */
+
+position: absolute;
+width: 400px;
+height: 70px;
+left: 66px;
+top: 67px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 46.941px;
+line-height: 70px;
+
+color: #245C6E;">
+vital Care</h5>
+
+</div>
+ </div>
+    <form>
+      <label style="/* Patient’s First Name */
+
+position: absolute;
+width: 200px;
+height: 30px;
+left: 774px;
+top: 270px;
+" class="headings"  for="patient-name">Doctor first Name:</label>
+      <input class="inp" style="position: absolute;
+left: 766px;
+top: 302px;" type="text" id="patient-name" name="patient-name" required><br><br>
+      
+ <label style="/* Patient’s Last Name */
+
+position: absolute;
+width: 199px;
+height: 30px;
+left: 1093px;
+top: 270px;
+"class="headings"  for="patient-name">Doctor Last Name:</label>
+      <input class="inp" style="/* Rectangle 50 */
+position: absolute;
+left: 1066px;
+top: 302px;
+" type="text" id="patient-name" name="patient-name" required><br><br>
+       
+      <label style="position: absolute;
+left: 770px;
+top: 412px;" class="headings" for="patient-gender">Doctor Gender:</label>
+      <select style="/* Rectangle 52 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 268px;
+height: 57px;
+left: 768px;
+top: 442px;
+
+background: #F8F7F7;
+border: 1px solid #DCD7D7;
+border-radius: 14px;
+" id="doctor-gender" name="doctor-gender" required>
+        <option class="headings" value="">--Please select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br><br>
+       <label  style="position: absolute;
+left: 1070px;
+top: 412px;" class="headings" for="specialization">Specialization:</label>
+  <select class="inp" style="position: absolute;
+left: 1070px;
+top: 442px;" type="text" id="specialization" name="specialization" required>
+ <option class="headings" value="">--Please select--</option>
+        <option value="neurologist">neurologist</option>
+        <option value="gynologist">Gynologist</option>
+        <option value="child Specialist">child specialist</option>
+        <option value="dentist">Dentist</option>
+        <option value="urologist">urologist</option>
+        <option value="pulmunologist">pulmunologist</option>
+        <option value="psychiatrist">psychiatrist</option>
+        <option value="general practitionar">general practitionar</option>
+      </select><br><br>
+
+      <label  class="headings" style="position: absolute;
+left: 1070px;
+top: 532px;" for="doctor-phone">Doctor Phone:</label>
+      <input class="inp" style="position: absolute;
+left: 1070px;
+top: 572px;" type="tel" id="Doctor-phone" name="Doctor-phone" pattern="[0-9]{2}[0-9]{3}[0-9]{3}" required><br><br>
+      
+      <label class="headings" style="position: absolute;
+left: 770px;
+top: 532px;" for="doctor-email">Doctor Email:</label>
+      <input class="inp" style="position: absolute;
+left: 770px;
+top: 572px;" type="email" id="doctor-email" name="docotor-email" required><br><br>
+
+
+<label style="position: absolute;
+left: 770px;
+top: 652px;" class="headings" for="password">Password:</label>
+  <input class="inp" style="position: absolute;
+left: 770px;
+top: 682px;" type="password" id="password" name="password" minlength="8" required><br><br>
+
+  <label style="position: absolute;
+left: 1070px;
+top: 652px;"class="headings" for="confirm-password">Confirm Password:</label>
+  <input class="inp" style="position: absolute;
+left: 1070px;
+top: 682px;" type="password" id="confirm-password" name="confirm-password" minlength="8" required><br><br>
+<li>
+        <input style="position: absolute;left: 93px; " type="checkbox" id="payment" name="payment" value="payment" required>
+        <label style="position: absolute;left: 98px; width: 500px;" for="task2">accept all conditions </label><br>
+        <a style="position: absolute;
+        left: 324px;
+        top: 1px; width: 1000px;"
+         href="">and terms of privacy</a>
+        <p style="position: absolute;
+        left: -66px;
+        top: 135px; width: 1000px;" >Already have an acount</p><a style="position: absolute;
+        left: 135px;
+        top: 150px; width: 1000px;" href="">log in</a>
+      </li>
+      <button type="submit" value="Book Appointment">sing up</button>
+    </form>
+          
+    </div>
+  </body>
+
+  <style type="text/css">
+  	.card{
+  		/* Rectangle 46 */
+
+position: absolute;
+width: 1260px;
+height: 876px;
+left: 115px;
+top: 76px;
+padding: 20px;
+background: #FFFFFF;
+box-shadow: 0px 3.99524px 3.99524px rgba(0, 0, 0, 0.25);
+border-radius: 37.9548px;
+
+  	}
+
+h1{
+	/* Appointment */
+
+position: absolute;
+
+height: 58px;
+left: 665px;
+top: 55px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 38.6667px;
+line-height: 58px;
+/* identical to box height */
+
+color: #404040;
+
+}
+h3 {
+	/* Dr. flena */
+
+position: absolute;
+width: 219px;
+height: 39px;
+left: 109.48px;
+top: 246.622px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 25.7333px;
+line-height: 39px;
+/* identical to box height */
+text-align: center;
+
+color: #404040;
+
+}
+h5{
+	/* Neurologist */
+
+position: absolute;
+width: 111px;
+height: 29px;
+left: 163.1px;
+top: 316.62px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 19.2034px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+
+color: #767676;
+
+
+}
+
+
+.headings{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #404040;
+
+
+}
+.inp {
+	background: #F8F7F7;
+border: 1px solid #DCD7D7;
+border-radius: 14px;
+box-sizing: border-box;
+width: 265px;
+height: 57px;
+
+}
+
+button {
+/* Rectangle 55 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 298px;
+height: 63px;
+left: 625px;
+top: 840px;
+
+background: #245C6E;
+border: 1px solid #245C6E;
+border-radius: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+cursor: pointer;
+color: #FFFFFF;
+}
+
+      li {
+      	list-style: none;  font-family: 'Poppins', sans-serif;
+        color: #54A798;
+        margin-bottom: 10px;
+        position: absolute;
+        left: 750px;
+        top: 785px;
+      }
+      
+
+      
+
+      li input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      li label {
+        margin-left: 25px;
+        font-size: 18px;
+      }
+
+      li input[type="checkbox"]:checked + label {
+        text-decoration:underline;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+  </style>
+
+</html>

@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="elaa mokrani">
+    <link rel="stylesheet" href="exp.css">
+    <link rel="stylesheet" href="exp.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/facebook-f?style=brands">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/twitter?style=brands">
+<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/instagram?style=brands">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+	<title> Doctor Dashboard</title>
+</head>
+<body bgcolor="9CBEC9">
+   <div class="search-bar">
+      <div > </div>
+      <input type="text" placeholder="Search...">
+<img style="position: absolute;top: 15px;left: 250px;" src="C:\Users\user\Desktop\vital care projet web\images\svg\notification.svg">
+    <img style="position: absolute;top: 17px;left: 286px; " src="C:\Users\user\Desktop\vital care projet web\images\svg\hlel.svg">
+    <img style="position: absolute;top: 15px;left: 320px;" src="C:\Users\user\Desktop\vital care projet web\images\svg\!.svg">
+<img class="profile-pic" src="C:\Users\user\Desktop\vital care projet web\images\svg\profile pic doc.svg">
+<line x1="10.0101" y1="11" x2="8" y2="8.98995" stroke="#245C6E" stroke-width="1.4" stroke-linecap="round"/>
+</svg>
+
+    </div>
+	
+	<h1 style="/* Med Care */
+
+position: absolute;
+height: 70px;
+left: 123px;
+top: -12px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 46.941px;
+line-height: 70px;
+
+color: #000000;
+
+">Vital Care </h1>
+<p class="titre" style="/* Welcome*/
+left: 135px;
+color: #919191;
+">Welcome</p>
+<p class="titre" style="/* Welcome, Dr. Ravi Bec, Child Specialist */
+left: 255px;
+color: #4E4E4E;
+
+">, Dr. Flen Foul, </p>
+<p class="titre" style="color: #54A798;left: 425px;">Child Specialist</p>
+<nav class="nav__cont">
+  <ul class="nav">
+    <li class="nav__items ">
+     <img src="C:\Users\user\Desktop\vital care projet web\images\svg\home dash.svg" viewBox="0 0 32 32">
+        <use xlink:href="#home"></use>
+      </svg>
+      <a href="">Dashboard</a>
+    </li>
+    
+    <li class="nav__items ">
+      <img src="C:\Users\user\Desktop\vital care projet web\images\svg\appoint white.svg" viewBox="0 0 32 32">
+        <use xlink:href="#search"></use>
+      </svg>
+      <a href="">Appointement request</a>
+    </li>
+      
+    <li class="nav__items ">
+      <img  src="C:\Users\user\Desktop\vital care projet web\images\svg\tables.svg" viewBox="0 0 32 32">
+        <use xlink:href="#map"></use>
+      </svg>
+     <a href="">Tables</a>
+    </li>
+      
+    <li class="nav__items ">
+     <img src="C:\Users\user\Desktop\vital care projet web\images\svg\articles.svg" viewBox="0 0 32 32">
+        <use xlink:href="#planner"></use></svg>
+      <a href="">Articles</a>
+    </li>
+    <li class="nav__items ">
+     <img src="C:\Users\user\Desktop\vital care projet web\images\svg\profile icon.svg" viewBox="0 0 32 32">
+
+        <use xlink:href="#planner"></use></svg>
+      <a href="">Profile</a>
+    </li>
+    <li class="nav__items ">
+      <img src="C:\Users\user\Desktop\vital care projet web\images\svg\logout.svg" viewBox="0 0 32 32">
+        <use xlink:href="#planner"></use></svg>
+      <a href="">Log Out</a>
+    </li>
+       
+
+
+  </ul>
+</nav>
+
+  <div class="rating">
+  	<img style="position: absolute; top: 40px;
+  	left: 30px;" src="C:\Users\user\Desktop\vital care projet web\images\svg\rating.svg">
+  	<p style="left: 100px;">rating:</p>
+  	 <div class="stars">
+      <span class="star" id="star1">&#9733;</span>
+      <span class="star" id="star2">&#9733;</span>
+      <span class="star" id="star3">&#9733;</span>
+      <span class="star" id="star4">&#9733;</span>
+      <span class="star" id="star5">&#9733;</span>
+      <span class="clients">(100)</span>
+    </div>
+    <script>
+      // Get the number of clients rate
+      const numOfClients = 100;
+      
+      // Calculate the average rating
+      const rating = 4.5;
+      
+      // Calculate the number of filled stars
+      const filledStars = Math.round(rating);
+
+      // Set the active class to the appropriate stars
+      for (let i = 1; i <= filledStars; i++) {
+        document.getElementById(`star${i}`).classList.add('active');
+      }
+
+      // Set the color of the stars based on the number of clients rate
+      const stars = document.querySelectorAll('.star');
+      const color = '#54A798';
+      const threshold = 50;
+      
+      if (numOfClients >= threshold) {
+        stars.forEach(star => star.style.color = color);
+      }
+
+      // Update the number of clients
+      const clients = document.querySelector('.clients');
+      clients.textContent = `(${numOfClients})`;
+    </script>
+  </div>
+  <div class="patient-number">
+  	<img style="position: absolute; top: 50px;
+  	left: 50px;" src="C:\Users\user\Desktop\vital care projet web\images\svg\patient-number.svg">
+    <p>patient treated:</p>
+    <p id="count">0</p>
+    <button class="plus" onclick="increment()">+</button>
+    <button class="moins" onclick="decrement()">-</button>
+    <script>
+      var count = 0;
+      function increment() {
+        count++;
+        document.getElementById("count").innerHTML = count;
+      }
+      function decrement() {
+        if (count > 0) {
+          count--;
+          document.getElementById("count").innerHTML = count;
+        }
+      }
+    </script></div>
+  <div class="app-request"><p>Appointment Requests</p> <table>
+      <thead>
+       <tr>
+          <th style="/* Name */
+
+position: absolute;
+left: -18px;
+width: 100px;
+top: 10px;
+">Patient Name</th><br><br>
+          <th style="/* Disease */
+
+position: absolute;
+left: 98px;
+top: 5px;
+width: 130px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14.0372px;
+/* identical to box height, or 204% */
+text-align: center;
+
+color: #919191;
+
+">Date & Time</th>
+          <th style="/* Disease */
+
+position: absolute;
+left: 248px;
+top: 5px;
+width: 130px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14.0372px;
+/* identical to box height, or 204% */
+text-align: center;
+
+color: #919191;
+
+">Disease</th>
+          <th style="/* Disease */
+position: relative;
+left: 420px;
+width: 13px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14.0372px;
+/* identical to box height, or 204% */
+text-align: center;
+
+color: #919191;
+
+">Approval</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr style="/* Rectangle 357 */
+
+position: absolute;
+width: 664px;
+height: 61px;
+background: #FFFFFF;
+left: -18px;
+box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+border-radius: 30px;
+">
+          <td>John Doe</td>
+          <td>2023-05-01 10:00 AM</td>
+          <td>General Checkup</td>
+          <td>
+  <button style="position: absolute; left:450px; top: 5px; "class="approval" onclick="confirmAction()"><img src="C:\Users\user\Desktop\vital care projet web\images\svg\green tick.svg" alt="Confirm"></button>
+  <button style="position: absolute; left:490px; top: 5px;" class="approval" onclick="refuseAction()"><img src="C:\Users\user\Desktop\vital care projet web\images\svg\red croit.svg" alt="Refuse"></button>
+
+  <script>
+    function confirmAction() {
+      if(confirm("Are you sure you want to proceed?")) {
+        // Perform the desired action here
+        console.log("User confirmed");
+      }
+    }
+
+    function refuseAction() {
+      if(confirm("Are you sure you want to refuse?")) {
+        // Perform the desired action here
+        console.log("User refused");
+      }
+    }
+  </script>
+</td>
+        </tr>
+        <tr style="/* Rectangle 358 */
+
+position: absolute;
+width: 664px;
+height: 61px;
+left: -18px;
+top: 110px;
+
+background: #FFFFFF;
+box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+border-radius: 30px;
+">
+          <td>Jane Smith</td>
+          <td>2023-05-02 02:30 PM</td>
+          <td>Back Pain</td>
+          <td>
+  <button style="position: absolute; left:450px; top: 5px; "class="approval" onclick="confirmAction()"><img src="C:\Users\user\Desktop\vital care projet web\images\svg\green tick.svg" alt="Confirm"></button>
+  <button style="position: absolute; left:490px; top: 5px; "class="approval" onclick="refuseAction()"><img src="C:\Users\user\Desktop\vital care projet web\images\svg\red croit.svg" alt="Refuse"></button>
+
+  <script>
+    function confirmAction() {
+      if(confirm("Are you sure you want to proceed?")) {
+        // Perform the desired action here
+        console.log("User confirmed");
+      }
+    }
+
+    function refuseAction() {
+      if(confirm("Are you sure you want to refuse?")) {
+        // Perform the desired action here
+        console.log("User refused");
+      }
+    }
+  </script>
+</td>
+        </tr>
+        <tr style="/* Rectangle 359 */
+
+position: absolute;
+width: 664px;
+height: 61px;
+left: -18px;
+top: 176px;
+
+background: #FFFFFF;
+box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+border-radius: 30px;
+">
+          <td>Bob Johnson</td>
+          <td>2023-05-03 09:45 AM</td>
+          <td>Flu Symptoms</td>
+          <td>
+  <button style="position: absolute;left: 450px;top: 5px;" class="approval" onclick="confirmAction()"><img src="C:\Users\user\Desktop\vital care projet web\images\svg\green tick.svg" alt="Confirm"></button>
+  <button style="position: absolute; left:490px; top: 5px;" class="approval" onclick="refuseAction()"><img src="C:\Users\user\Desktop\vital care projet web\images\svg\red croit.svg" alt="Refuse"></button>
+
+  <script>
+    function confirmAction() {
+      if(confirm("Are you sure you want to proceed?")) {
+        // Perform the desired action here
+        console.log("User confirmed");
+      }
+    }
+
+    function refuseAction() {
+      if(confirm("Are you sure you want to refuse?")) {
+        // Perform the desired action here
+        console.log("User refused");
+      }
+    }
+  </script>
+</td>
+        </tr>
+        
+      </tbody>
+    </table>
+</div>
+  <div class="visited-clients"><p>Most Visited Clients</p><table>
+  <thead>
+    <tr>
+      <th>Client Name</th>
+      <th>Disease</th>
+      <th>Number of Visits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td>John Doe</td>
+      <td>back pain</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>bad vision</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Bob Johnson</td>
+      <td>headech</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Alice Davis</td>
+      <td>inflamation</td>
+      <td>6</td>
+    </tr>
+  
+  </tbody>
+</table> </div>
+  <div class="payment"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+  <body>
+    <canvas id="myChart"></canvas>
+    <script>
+      const ctx = document.getElementById('myChart').getContext('2d');
+
+      const chartData = {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        datasets: [
+          {
+            label: 'Monthly Payments',
+            data: [2500, 1300, 3500, 4000, 4500, 400, 5000, 4000, 6500, 6000, 7500, 8000],
+            backgroundColor: 'rgba(84, 167, 152, 0.5)',
+            borderColor: '#54A798',
+            borderWidth: 2,
+            lineTension: 0.3,
+            pointRadius: 5,
+            pointBackgroundColor: '#54A798',
+            pointBorderColor: '#ffffff',
+            pointHoverRadius: 8,
+            pointHoverBackgroundColor: '#408271',
+            pointHoverBorderColor: '#ffffff'
+          }
+        ]
+      };
+
+      const chartOptions = {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        },
+        legend: {
+          display: true,
+          position: 'bottom'
+        }
+      };
+
+      const myChart = new Chart(ctx, {
+        type: 'line',
+        data: chartData,
+        options: chartOptions
+      });
+    </script>
+    <script>
+		$(function() {
+			$("#datepicker").datepicker({
+				showOn: "button",
+				buttonImage: "https://www.iconarchive.com/download/i103365/paomedia/small-n-flat/calendar.1024.png",
+				buttonImageOnly: true,
+				dateFormat: "dd-mm-yy"
+			});
+		});
+	</script><label for="datepicker"></label>
+	<input  id="datepicker">
+ </div>
+  <div class="notifications"><p>Announcements</p><section style="top: 82px;"><img src="C:\Users\user\Desktop\vital care projet web\images\png\3rd pic.jpg"> <h3 style="/* Meeting has been reshedule for 28 may.... */
+">Meeting has been reshedule for 28 may....</h3> </section> 
+<section style="top: 149px;"><img src="C:\Users\user\Desktop\med care projet web\images\png\3rd pic.jpg"> <h3 style="/* Meeting has been reshedule for 28 may.... */
+
+">We request our doctor to use our website....</h3> </section>
+<section style="top: 212px;"><img src="C:\Users\user\Desktop\vital care projet web\images\png\3rd pic.jpg"> <h3 style="/* Meeting has been reshedule for 28 may.... */
+">Dr Faisal has completed 400 surgery. Congrat....</h3> </section>
+</div>
+</body>
+<style type="text/css">
+  .approval{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(64, 64, 64, 0.41);
+}
+
+.approval img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.approval:first-child {
+  background-color: #ffffffff;
+}
+
+.approval:last-child {
+  background-color: #B51B1B;
+}
+
+  div svg {
+  
+  top: 70px;
+  left: 700px;
+}
+      /* Style for search bar */
+      .search-bar {
+        position: absolute;
+        left: 1000px;
+        top: 40px;
+       width: 422px;
+height: 61px;
+
+
+background: #54A798;
+box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+border-radius: 30px;
+
+      }
+      .search-bar input[type="text"] {
+        /* Background */
+
+
+background: #F4F7FE;
+border-radius: 49px;
+position: absolute;
+top: 15px;
+left: 15px;
+        border: none;
+        background-color: white;
+        padding: 5px;
+        margin-left: 5px;
+        font-size: 14px;
+        width: 50%;
+        border-radius: 30px;
+      }
+      
+      /* Style for profile picture */
+      .profile-pic {
+        /* Ellipse 119 */
+
+position: absolute;
+
+left: 360px;
+top: 5px;
+
+
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #245C6E;
+        margin-right: 5px;
+      }
+    .search-bar img{
+
+    }
+	  .nav__cont {
+  z-index: 9;
+    /* Card */
+position: absolute;
+width: 321px;
+height: 1153px;
+left: -13px;
+top: -10px;
+
+background: #245C6E;
+box-shadow: 0px 3.30909px 19.8545px -0.827273px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(16.5455px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 33.0909px;
+   overflow: hidden;
+   transition: width 0.3s ease;
+   cursor: pointer;
+   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
+}
+ .nav__cont:hover {
+   width: 300px;
+}
+ @media screen and (min-width: 600px) {
+   .nav__cont {
+     width: 80px;
+  }
+}
+ .nav {
+   list-style-type: none;
+   color: white;
+}
+ .nav:first-child {
+   padding-top: 1.5rem;
+}
+ .nav__items {
+   padding-bottom: 4rem;
+   font-family: "roboto";
+}
+ .nav__items a {
+   position: relative;
+   display: block;
+   top: -35px;
+   padding-left: 25px;
+   padding-right: 15px;
+   transition: all 0.3s ease;
+   margin-left: 25px;
+   margin-right: 10px;
+   text-decoration: none;
+   color: white;
+   font-family: "roboto";
+   font-weight: 100;
+   font-size: 1.35em;
+}
+ .nav__items a:after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-radius: 2px;
+   background: radial-gradient(circle at 94.02% 88.03%, #D2EBE7, transparent 100%);
+   opacity: 0;
+   transition: all 0.4s ease;
+   z-index: -10;
+}
+ .nav__items:hover a:after {
+   opacity: 1;
+}
+ .nav__items img {
+   width: 26px;
+   height: 26px;
+   position: relative;
+   left: -5px;
+   cursor: pointer;
+}
+ @media screen and (min-width: 600px) {
+   .nav__items svg {
+     width: 32px;
+     height: 72px;
+     left: -15px;
+  }
+}
+.logo img{
+	/* med_care_Logo-removebg-preview 1 */
+position: absolute;
+width: 169px;
+height: 169px;
+left: 1321px;
+top: 0px;
+}
+h2 {
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+.app-request{
+	/* Card */
+
+position: absolute;
+width: 692px;
+height: 341.07px;
+left: 140px;
+top: 321px;
+
+background: #FFFFFF;
+box-shadow: 0px 4.07454px 24.4472px -1.01863px rgba(0, 0, 0, 0.11);
+backdrop-filter: blur(20.3727px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+}
+
+.visited-clients{
+	/* Card */
+
+position: absolute;
+width: 495px;
+height: 341.07px;
+left: 901px;
+top: 322px;
+
+background: #FFFFFF;
+box-shadow: 0px 4.07454px 24.4472px -1.01863px rgba(0, 0, 0, 0.11);
+backdrop-filter: blur(20.3727px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+}
+.payment {
+	/* Card */
+
+position: absolute;
+width: 692px;
+height: 341.07px;
+left: 140px;
+top: 736px;
+
+background: #FFFFFF;
+box-shadow: 0px 4.07454px 24.4472px -1.01863px rgba(0, 0, 0, 0.11);
+backdrop-filter: blur(20.3727px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+}
+.notifications {
+	/* Card */
+
+position: absolute;
+width: 495px;
+height: 337px;
+left: 901px;
+top: 739px;
+
+background: #FFFFFF;
+box-shadow: 0px 4.07454px 24.4472px -1.01863px rgba(0, 0, 0, 0.11);
+backdrop-filter: blur(20.3727px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+}
+.patient-number{
+	/* Card */
+
+position: absolute;
+width: 315px;
+height: 100.07px;
+left: 140px;
+top: 166px;
+
+background: #FFFFFF;
+box-shadow: 0px 4.07454px 24.4472px -1.01863px rgba(0, 0, 0, 0.11);
+backdrop-filter: blur(20.3727px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+}
+.rating{
+	/* Card */
+
+position: absolute;
+width: 312px;
+height: 100.07px;
+left: 499px;
+top: 166px;
+
+background: #FFFFFF;
+box-shadow: 0px 4.07454px 24.4472px -1.01863px rgba(0, 0, 0, 0.11);
+backdrop-filter: blur(20.3727px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+
+}
+.titre{
+	position: absolute;
+width: 477px;
+height: 29px;
+
+top: 68px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+/* identical to box height, or 115% */
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+}
+
+
+ div p {
+        font-size: 22px;
+        color: black;
+        font-family: poppins;
+        font-weight: 500;
+        position: absolute;
+        top: -15px;
+        left: 60px;
+      }
+      #count {
+        font-size: 35px;
+        color: #54A798;
+        text-align: center;
+        position: absolute;
+        top: 4px;
+        left: 140px;
+      }
+      .plus {
+      	width: 20px;
+      	height: 20px;
+        background-color: #54A798;
+        color: #fff;
+        border: none;
+        z-index: 9;
+        position: absolute;
+        top: 40px;
+        left: 260px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .moins{
+      	width: 20px;
+      	height: 20px;
+      	background-color: #54A798;
+        color: #fff;
+        border: none;
+        z-index: 9;
+        position: absolute;
+        top: 70px;
+        left: 260px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #fff;
+        color: #54A798;
+        border: 2px solid #54A798;
+      }
+     
+     .stars {
+     	position: absolute;
+     	top: 50px;
+     	left: 85px;
+        display: inline-block;
+        font-size: 24px;
+        color: #dcdcdc;
+        text-shadow: 1px 1px #54A798;
+      }
+
+      .stars.active {
+        color: #54A798;
+        text-shadow: 1px 1px #dcdcdc;
+      }
+
+      .stars span:hover,
+      .stars span:hover ~ span {
+        color: #54A798;
+        text-shadow: 1px 1px #dcdcdc;
+      }
+
+      .clients {
+        font-size: 16px;
+        color: black;
+        margin-left: 5px;
+        font-family: poppins;
+      }
+      .app-request p{
+      	/* Appointment Requests */
+
+position: absolute;
+width: 387px;
+height: 29px;
+left: 161px;
+top: 0px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+/* identical to box height, or 115% */
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+
+color: #4E4E4E;
+
+      }
+.visited-clients p{
+	/* Most Visited Clients */
+
+position: absolute;
+width: 244px;
+height: 29px;
+left: 100px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+/* identical to box height, or 115% */
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+
+color: #4E4E4E;
+
+
+}
+.notifications p{
+	/* Announcements */
+
+position: absolute;
+width: 201px;
+height: 29px;
+left: 157px;
+top: 20px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height, or 119% */
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+
+color: #4E4E4E;
+
+}
+.calendar-icon {
+			cursor: pointer;
+		}
+
+.ui-datepicker-trigger {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://www.iconarchive.com/download/i103365/paomedia/small-n-flat/calendar.1024.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+#datepicker {
+	position: absolute;
+	top: 25px;
+	left: 55px;
+	width: 66px;
+	height: 10px;
+}
+
+      canvas {
+        max-width: 500px;
+        max-height: 300px;
+        position: absolute;
+        left: 100px;
+        top: 20px;
+      }
+    
+
+    table {
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 30;
+  position: absolute;
+  top: 80px;
+  left: 40px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+th {
+	font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14.0372px;
+align-items: center;
+letter-spacing: -0.02em;
+color: #919191;
+}
+
+tr {
+  border-radius: 30px;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+td:not(:last-child) {
+  border-right: none;
+}
+
+div section {
+	/* Rectangle 363 */
+
+position: absolute;
+width: 422px;
+height: 51px;
+left: 44px;
+background: #FFFFFF;
+box-shadow: 10.0715px 12.2297px 28.7757px 2.87757px rgba(112, 144, 176, 0.08);
+border-radius: 21.5817px;
+
+}
+h3{
+	position: absolute;
+	left: 60px;
+	font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14.0372px;
+line-height: 29px;
+/* identical to box height, or 204% */
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+
+color: #404040;
+}
+section img {
+	/* Ellipse 113 */
+
+position: absolute;
+width: 37px;
+height: 37px;
+left: 10px;
+top: 15px;
+border-radius: 50%;
+background: #C4C4C4;
+
+}
+
+</style>
+</html>
