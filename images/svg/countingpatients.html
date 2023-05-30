@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Patients Count</title>
+  </head>
+  <body>
+    <h1>Patients Count</h1>
+    <p>patient treated:</p>
+    <p id="count">0</p>
+    <button onclick="increment()">+</button>
+    <button onclick="decrement()">-</button>
+    <script>
+      var count = 0;
+      function increment() {
+        count++;
+        document.getElementById("count").innerHTML = count;
+      }
+      function decrement() {
+        if (count > 0) {
+          count--;
+          document.getElementById("count").innerHTML = count;
+        }
+      }
+    </script>
+
+
+  </body>
+  <style type="text/css">
+    
+    
+ div p {
+        font-size: 20px;
+        color: #54A798;
+      }
+      #count {
+        font-size: 40px;
+        color: #54A798;
+        text-align: center;
+      }
+      button {
+        background-color: #54A798;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        margin-right: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: black;
+        color: #54A798;
+        border: 2px solid #54A798;
+      }
+  </style>
+</html>
