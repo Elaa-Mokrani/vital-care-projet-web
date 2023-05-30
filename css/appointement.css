@@ -1,0 +1,181 @@
+	.card{
+  		/* Rectangle 46 */
+
+position: absolute;
+width: 1260px;
+height: 676px;
+left: 55px;
+top: 176px;
+padding: 20px;
+background: #FFFFFF;
+box-shadow: 0px 3.99524px 3.99524px rgba(0, 0, 0, 0.25);
+border-radius: 37.9548px;
+
+  	}
+
+h1{
+	/* Appointment */
+
+position: absolute;
+
+width: 1000px;
+left: 430px;
+top: 93px;
+color: #54A798;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 1000;
+font-size: 38.6667px;
+line-height: 58px;
+/* identical to box height */
+
+
+}
+h2{
+	/* feln fallouni */
+
+position: absolute;
+width: 268px;
+
+left: 413px;
+top: 212px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 27.6977px;
+line-height: 42px;
+/* identical to box height */
+
+color: #24306E;
+
+
+}
+h3 {
+	/* Dr. flena */
+
+position: absolute;
+width: 219px;
+height: 39px;
+left: 109.48px;
+top: 246.622px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 25.7333px;
+line-height: 39px;
+/* identical to box height */
+text-align: center;
+
+color: #404040;
+
+}
+h5{
+	/* Neurologist */
+
+position: absolute;
+width: 111px;
+height: 29px;
+left: 163.1px;
+top: 316.62px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 19.2034px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+
+color: #767676;
+
+
+}
+.stars {
+        display: inline-block;
+        font-size: 24px;
+        color: #dcdcdc;
+        text-shadow: 1px 1px #54A798;
+        position: absolute;
+        top: 380px;
+        left: 140px;
+      }
+
+      .stars.active {
+        color: #54A798;
+        text-shadow: 1px 1px #dcdcdc;
+      }
+
+      .stars span:hover,
+      .stars span:hover ~ span {
+        color: #54A798;
+        text-shadow: 1px 1px #dcdcdc;
+      }
+
+      .clients {
+        font-size: 16px;
+        color: black;
+        margin-left: 5px;
+        font-family: poppins;
+      }
+
+.date{
+	/* 29 August 2023 */
+
+position: absolute;
+width: 187px;
+height: 36px;
+left: 413px;
+top: 282.6px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24.0655px;
+line-height: 36px;
+/* identical to box height */
+
+color: #24306E;
+}
+.time {
+	/* 4:30 pm */
+
+position: absolute;
+width: 101px;
+height: 36px;
+left: 628px;
+top: 282px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24.0655px;
+line-height: 36px;
+/* identical to box height */
+
+color: #24306E;
+
+
+}
+
+p{
+	/* A notification has been sent to Ph.numb and flenfallouni4@gmail.com */
+
+position: absolute;
+width: 665px;
+height: 26px;
+left: 406px;
+top: 370px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 17.1648px;
+line-height: 26px;
+/* identical to box height */
+
+color: #404040;
+
+
+}

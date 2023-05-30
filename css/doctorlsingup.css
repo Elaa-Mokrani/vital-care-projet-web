@@ -1,0 +1,156 @@
+	.card{
+  		/* Rectangle 46 */
+
+position: absolute;
+width: 1260px;
+height: 876px;
+left: 115px;
+top: 76px;
+padding: 20px;
+background: #FFFFFF;
+box-shadow: 0px 3.99524px 3.99524px rgba(0, 0, 0, 0.25);
+border-radius: 37.9548px;
+
+  	}
+
+h1{
+	/* Appointment */
+
+position: absolute;
+
+height: 58px;
+left: 665px;
+top: 55px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 38.6667px;
+line-height: 58px;
+/* identical to box height */
+
+color: #404040;
+
+}
+h3 {
+	/* Dr. flena */
+
+position: absolute;
+width: 219px;
+height: 39px;
+left: 109.48px;
+top: 246.622px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 25.7333px;
+line-height: 39px;
+/* identical to box height */
+text-align: center;
+
+color: #404040;
+
+}
+h5{
+	/* Neurologist */
+
+position: absolute;
+width: 111px;
+height: 29px;
+left: 163.1px;
+top: 316.62px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 19.2034px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+
+color: #767676;
+
+
+}
+
+
+.headings{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #404040;
+
+
+}
+.inp {
+	background: #F8F7F7;
+border: 1px solid #DCD7D7;
+border-radius: 14px;
+box-sizing: border-box;
+width: 265px;
+height: 57px;
+
+}
+
+button {
+/* Rectangle 55 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 298px;
+height: 63px;
+left: 625px;
+top: 840px;
+
+background: #245C6E;
+border: 1px solid #245C6E;
+border-radius: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+cursor: pointer;
+color: #FFFFFF;
+}
+
+      li {
+      	list-style: none;  font-family: 'Poppins', sans-serif;
+        color: #54A798;
+        margin-bottom: 10px;
+        position: absolute;
+        left: 750px;
+        top: 785px;
+      }
+      
+
+      
+
+      li input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      li label {
+        margin-left: 25px;
+        font-size: 18px;
+      }
+
+      li input[type="checkbox"]:checked + label {
+        text-decoration:underline;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
